@@ -1,0 +1,19 @@
+Source: adaptation-fxtec-pro1x
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Section: metapackages
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               debhelper-compat (= 13),
+Standards-Version: 4.5.0.3
+
+Package: adaptation-fxtec-pro1x
+Architecture: arm64
+Depends: ${misc:Depends},
+         adaptation-hybris-api30-phone,
+         adaptation-fxtec-pro1x-configs (= ${binary:Version}),
+Description: Droidian adaptation for F(x)tec Pro1-X - metapackage
+
+Package: adaptation-fxtec-pro1x-configs
+Architecture: arm64
+Depends: ${misc:Depends},
+Description: Droidian adaptation for F(x)tec Pro1-X - adaptation configurations
