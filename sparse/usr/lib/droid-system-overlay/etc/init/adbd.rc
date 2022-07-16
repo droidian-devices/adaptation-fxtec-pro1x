@@ -1,0 +1,5 @@
+service adbd /system/bin/adbd_HYBRIS_DISABLED
+    class core
+    socket adbd stream 660 system system
+    disabled
+    override
