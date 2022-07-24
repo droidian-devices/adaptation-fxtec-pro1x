@@ -1,2 +1,3 @@
 /usr/lib/adaptation-fxtec-pro1x/sources.list.d/fxtec-pro1x.list /etc/apt/sources.list.d/fxtec-pro1x.list
 /usr/lib/adaptation-fxtec-pro1x/preferences.d/30-fxtec-pro1x /etc/apt/preferences.d/30-fxtec-pro1x
+/usr/lib/adaptation-fxtec-pro1x/package-sideload-create.d/fxtec-pro1x /etc/package-sideload-create.d/fxtec-pro1x
