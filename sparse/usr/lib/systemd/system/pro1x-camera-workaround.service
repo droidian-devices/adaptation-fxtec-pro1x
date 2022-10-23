@@ -1,0 +1,20 @@
+# This unit is a workaround for the Pro1-X camera HAL.
+# This is not a silver bullet, but rather a 'best effort' workaround.
+#
+# Most probably the underlying issue is related to the other startup woes
+# on Pro1-X (such as vibration). This needs to be investigated and fixed
+# so that this pretty ugly workaround can go away.
+
+[Unit]
+Description=Workaround for pro1x's camera HAL
+Requires=android-service@vendor.camera-provider-2-4.service droidian_boot_completed.service
+After=android-service@vendor.camera-provider-2-4.service droidian_boot_completed.service
+
+[Service]
+Type=oneshot
+Environment=ANDROID_SERVICE_FORCE_KILL=yes
+ExecStart=/usr/bin/sleep 10
+ExecStart=/usr/lib/halium-wrappers/android-service.sh vendor.camera-provider-2-4 restart
+
+[Install]
+WantedBy=graphical.target
