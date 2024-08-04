@@ -11,6 +11,7 @@ Architecture: arm64
 Depends: ${misc:Depends},
          adaptation-hybris-api30-phone,
          linux-bootimage-fxtec-pro1x,
+         mobile-power-saver,
          adaptation-fxtec-pro1x-configs (= ${binary:Version}),
 Description: Droidian adaptation for F(x)tec Pro1-X - metapackage
 
