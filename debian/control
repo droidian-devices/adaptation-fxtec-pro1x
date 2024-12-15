@@ -18,4 +18,5 @@ Description: Droidian adaptation for F(x)tec Pro1-X - metapackage
 Package: adaptation-fxtec-pro1x-configs
 Architecture: arm64
 Depends: ${misc:Depends},
+         apt-transport-droidian (>= 1.1.0),
 Description: Droidian adaptation for F(x)tec Pro1-X - adaptation configurations
