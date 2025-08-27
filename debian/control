@@ -13,6 +13,7 @@ Depends: ${misc:Depends},
          linux-bootimage-fxtec-pro1x,
          mobile-power-saver,
          adaptation-fxtec-pro1x-configs (= ${binary:Version}),
+         droidian-quirks-firefox-gpu,
 Description: Droidian adaptation for F(x)tec Pro1-X - metapackage
 
 Package: adaptation-fxtec-pro1x-configs
